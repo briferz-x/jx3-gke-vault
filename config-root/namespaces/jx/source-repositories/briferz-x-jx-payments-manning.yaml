@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: briferz-x
+    provider: github
+    repository: jx-payments-manning
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: briferz-x-jx-payments-manning
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/briferz-x/jx-payments-manning.git
+  org: briferz-x
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: jx-payments-manning
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/briferz-x/jx-payments-manning

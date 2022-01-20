@@ -7,6 +7,7 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
+        briferz-x/jx-payments-manning: true
         briferz-x/jx3-gke-vault: true
     plank: {}
     pod_namespace: jx
@@ -19,6 +20,7 @@ data:
         required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
+        briferz-x/jx-payments-manning: merge
         briferz-x/jx3-gke-vault: merge
       queries:
       - labels:
@@ -31,6 +33,7 @@ data:
         - needs-rebase
         repos:
         - briferz-x/jx3-gke-vault
+        - briferz-x/jx-payments-manning
       - labels:
         - updatebot
         missingLabels:
@@ -41,6 +44,7 @@ data:
         - needs-rebase
         repos:
         - briferz-x/jx3-gke-vault
+        - briferz-x/jx-payments-manning
       target_url: http://lighthouse-jx.35.239.51.71.nip.io/merge/status
 kind: ConfigMap
 metadata:
