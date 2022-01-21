@@ -9,6 +9,7 @@ data:
       enabled:
         briferz-x/jx-payments-manning: true
         briferz-x/jx3-gke-vault: true
+        briferz-x/python-http: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -22,6 +23,7 @@ data:
       merge_method:
         briferz-x/jx-payments-manning: merge
         briferz-x/jx3-gke-vault: merge
+        briferz-x/python-http: merge
       queries:
       - labels:
         - approved
@@ -34,6 +36,7 @@ data:
         repos:
         - briferz-x/jx3-gke-vault
         - briferz-x/jx-payments-manning
+        - briferz-x/python-http
       - labels:
         - updatebot
         missingLabels:
@@ -45,6 +48,7 @@ data:
         repos:
         - briferz-x/jx3-gke-vault
         - briferz-x/jx-payments-manning
+        - briferz-x/python-http
       target_url: http://lighthouse-jx.35.239.51.71.nip.io/merge/status
 kind: ConfigMap
 metadata:
