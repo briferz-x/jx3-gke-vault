@@ -1,0 +1,10 @@
+# Source: jx-payments-manning/templates/sa.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: jx-payments-manning-jx-payments-manning
+  annotations:
+    meta.helm.sh/release-name: 'jx-payments-manning'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'

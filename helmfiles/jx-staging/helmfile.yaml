@@ -24,5 +24,7 @@ releases:
   version: 0.0.3
   name: jx-payments-manning
   namespace: jx-staging
+  values:
+  - jx-values.yaml
 templates: {}
 renderedvalues: {}
