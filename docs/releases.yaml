@@ -16,6 +16,18 @@
     repositoryName: jxgh
     repositoryUrl: https://jenkins-x-charts.github.io/repo
     resourcePath: config-root/namespaces/jx-production/jx-verify
+  - apiVersion: v1
+    appVersion: 0.0.1
+    description: A Helm chart for Kubernetes
+    firstDeployed: "2022-01-21T02:02:02Z"
+    icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
+    lastDeployed: "2022-01-21T02:02:02Z"
+    logsUrl: https://console.cloud.google.com/logs/viewer?authuser=1&project=brifer-terraform-admin&minLogLevel=0&expandAll=false&customFacets=&limitCustomFacetWidth=true&interval=PT1H&resource=k8s_container%2Fcluster_name%2Ftf-jx-destined-dog%2Fnamespace_name%2Fjx-production%2Fcontainer_name%2Fpython-http&dateRangeUnbound=both
+    name: python-http
+    repositoryName: dev
+    repositoryUrl: http://chartmuseum-jx.35.239.51.71.nip.io
+    resourcePath: config-root/namespaces/jx-production/python-http
+    version: 0.0.1
 - namespace: jx-staging
   path: helmfiles/jx-staging/helmfile.yaml
   releases:
